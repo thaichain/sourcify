@@ -19,18 +19,18 @@ const Header = () => {
     setShowNav((prev) => !prev);
   };
   return (
-    <header className="flex justify-between py-4 md:py-6 w-auto flex-wrap md:flex-nowrap">
+    <header className="flex flex-wrap justify-between w-auto py-4 md:py-6 md:flex-nowrap">
       <ReactTooltip effect="solid" />
       <div className="flex items-center">
         <Link to="/" className="flex items-center">
-          <img src={logoText} alt="Sourcify logo" className="max-h-10" />
-          <span className="ml-3 text-gray-700 font-vt323 text-2xl">
-            sourcify.eth
+          <img src={logoText} alt="Trustcontract logo" className="max-h-10" />
+          <span className="ml-3 text-2xl text-gray-700 font-vt323">
+            trustcontract.dev
           </span>
         </Link>
       </div>
       <button className="block md:hidden" onClick={toggleNav}>
-        <HiMenu className="text-gray-700 text-3xl hover:text-ceruleanBlue-500" />
+        <HiMenu className="text-3xl text-gray-700 hover:text-ceruleanBlue-500" />
       </button>
       {/* A div to break flex into new line */}
       <div className="h-0 basis-full"></div>
@@ -45,56 +45,50 @@ const Header = () => {
           } font-vt323 text-2xl text-gray-700 flex-col md:flex-row`}
         >
           <Link
-            className="link-underline mx-2 my-2 md:mx-6 hover:text-ceruleanBlue-500"
+            className="mx-2 my-2 link-underline md:mx-6 hover:text-ceruleanBlue-500"
             to="/verifier"
           >
             Verify
           </Link>
           <Link
-            className="link-underline mx-2 my-2 md:mx-6 hover:text-ceruleanBlue-500"
+            className="mx-2 my-2 link-underline md:mx-6 hover:text-ceruleanBlue-500"
             to="/lookup"
           >
             Lookup
           </Link>
           <a
-            className="link-underline mx-2 my-2 md:mx-6 hover:text-ceruleanBlue-500"
+            className="mx-2 my-2 link-underline md:mx-6 hover:text-ceruleanBlue-500"
             href={DOCS_URL}
           >
             Docs
           </a>
           <a
-            className="link-underline mx-2 my-2 md:mx-6 hover:text-ceruleanBlue-500"
+            className="mx-2 my-2 link-underline md:mx-6 hover:text-ceruleanBlue-500"
             href={PLAYGROUND_URL}
           >
             Playground
           </a>
         </nav>
         {/* Icons */}
-        <div className="flex items-center md:ml-8 mt-6 md:mt-0">
+        <div className="flex items-center mt-6 md:ml-8 md:mt-0">
           <a
             className="px-2 hover-to-fill"
-            href="https://github.com/ethereum/sourcify"
+            href="https://github.com/jfinchain/trustcontract"
             data-tip="Github"
           >
-            <Github className="h-6 w-auto fill-gray-700 " />
+            <Github className="w-auto h-6 fill-gray-700 " />
           </a>
           <a
             className="px-2 hover-to-fill"
-            href="https://twitter.com/sourcifyeth"
+            href="#"
             data-tip="Twitter"
           >
             <Twitter className="h-[1.4rem] w-auto fill-gray-700 500" />
           </a>
-          <a
-            className="pl-2 hover-to-fill"
-            href="https://matrix.to/#/#ethereum_source-verify:gitter.im"
-            data-tip="Matrix chat"
-          >
-            <Matrix className="h-6 w-auto fill-gray-700 hover:fill-ceruleanBlue-500" />
-          </a>
+
         </div>
         {/* <Link
-          className="link-underline ml-2 mb-2 mt-6 md:mt-2 md:ml-6 hover:text-ceruleanBlue-500"
+          className="mt-6 mb-2 ml-2 link-underline md:mt-2 md:ml-6 hover:text-ceruleanBlue-500"
           to="/status"
           data-tip="Server status: working"
         >

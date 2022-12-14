@@ -26,6 +26,94 @@
     ]
   },
   {
+    "name": "J2O Taro Chain",
+    "chain": "J2O",
+    "rpc": ["https://rpc.j2o.io"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "TARO Coin",
+      "symbol": "j2o",
+      "decimals": 18
+    },
+    "infoURL": "https://j2o.io",
+    "shortName": "j2o",
+    "chainId": 35011,
+    "networkId": 35011,
+    "explorers": [
+      {
+        "name": "J2O Chain Explorer",
+        "url": "https://exp.j2o.io",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "JFIN Chain",
+    "chain": "JFIN",
+    "rpc": ["https://rpc.jfinchain.com"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "JFIN Coin",
+      "symbol": "jfin",
+      "decimals": 18
+    },
+    "infoURL": "https://jfinchain.com",
+    "shortName": "jfin",
+    "chainId": 3501,
+    "networkId": 3501,
+    "explorers": [
+      {
+        "name": "JFIN Chain Explorer",
+        "url": "https://exp.jfinchain.com",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "JFIN Chain Testnet",
+    "chain": "JFIN",
+    "rpc": ["https://rpc.testnet.jfinchain.com"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "JFIN Coin",
+      "symbol": "jfin",
+      "decimals": 18
+    },
+    "infoURL": "https://jfinchain.com",
+    "shortName": "jfin",
+    "chainId": 3502,
+    "networkId": 3502,
+    "explorers": [
+      {
+        "name": "JFIN Chain Explorer",
+        "url": "https://exp.testnet.jfinchain.com",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "TCH Chain",
+    "chain": "TCH",
+    "rpc": ["https://rpc.tch.dev"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "TCH",
+      "symbol": "tch",
+      "decimals": 18
+    },
+    "infoURL": "https://tch.dev",
+    "shortName": "tch",
+    "chainId": 703,
+    "networkId": 703,
+    "explorers": [
+      {
+        "name": "TCH Explorer",
+        "url": "https://exp.tch.dev",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
     "name": "Expanse Network",
     "chain": "EXP",
     "rpc": ["https://node.expanse.tech"],
@@ -484,28 +572,6 @@
       {
         "name": "Genesis L1 testnet explorer",
         "url": "https://testnet.genesisl1.org",
-        "standard": "none"
-      }
-    ]
-  },
-  {
-    "name": "ShibaChain",
-    "chain": "SHIB",
-    "rpc": ["https://rpc.shibachain.net"],
-    "faucets": [],
-    "nativeCurrency": {
-      "name": "SHIBA INU COIN",
-      "symbol": "SHIB",
-      "decimals": 18
-    },
-    "infoURL": "https://www.shibachain.net",
-    "shortName": "shib",
-    "chainId": 27,
-    "networkId": 27,
-    "explorers": [
-      {
-        "name": "Shiba Explorer",
-        "url": "https://exp.shibachain.net",
         "standard": "none"
       }
     ]
@@ -4857,30 +4923,6 @@
     ]
   },
   {
-    "name": "TBSI Mainnet",
-    "title": "Thai Blockchain Service Infrastructure Mainnet",
-    "chain": "TBSI",
-    "rpc": ["https://rpc.blockchain.or.th"],
-    "faucets": [],
-    "nativeCurrency": { "name": "Jinda", "symbol": "JINDA", "decimals": 18 },
-    "infoURL": "https://blockchain.or.th",
-    "shortName": "TBSI",
-    "chainId": 1707,
-    "networkId": 1707
-  },
-  {
-    "name": "TBSI Testnet",
-    "title": "Thai Blockchain Service Infrastructure Testnet",
-    "chain": "TBSI",
-    "rpc": ["https://rpc.testnet.blockchain.or.th"],
-    "faucets": ["https://faucet.blockchain.or.th"],
-    "nativeCurrency": { "name": "Jinda", "symbol": "JINDA", "decimals": 18 },
-    "infoURL": "https://blockchain.or.th",
-    "shortName": "tTBSI",
-    "chainId": 1708,
-    "networkId": 1708
-  },
-  {
     "name": "Rabbit Analog Testnet Chain",
     "chain": "rAna",
     "icon": "rabbit",
@@ -5773,24 +5815,6 @@
         "name": "Paribu Net Testnet Explorer",
         "url": "https://testnet.paribuscan.com",
         "icon": "explorer",
-        "standard": "EIP3091"
-      }
-    ]
-  },
-  {
-    "name": "JFIN Chain",
-    "chain": "JFIN",
-    "rpc": ["https://rpc.jfinchain.com"],
-    "faucets": [],
-    "nativeCurrency": { "name": "JFIN Coin", "symbol": "jfin", "decimals": 18 },
-    "infoURL": "https://jfinchain.com",
-    "shortName": "jfin",
-    "chainId": 3501,
-    "networkId": 3501,
-    "explorers": [
-      {
-        "name": "JFIN Chain Explorer",
-        "url": "https://exp.jfinchain.com",
         "standard": "EIP3091"
       }
     ]
@@ -9691,39 +9715,6 @@
         "standard": "EIP3091"
       }
     ]
-  },
-  {
-    "name": "Arbitrum Rinkeby",
-    "title": "Arbitrum Testnet Rinkeby",
-    "chainId": 421611,
-    "shortName": "arb-rinkeby",
-    "chain": "ETH",
-    "networkId": 421611,
-    "nativeCurrency": {
-      "name": "Arbitrum Rinkeby Ether",
-      "symbol": "ETH",
-      "decimals": 18
-    },
-    "rpc": ["https://rinkeby.arbitrum.io/rpc"],
-    "faucets": ["http://fauceth.komputing.org?chain=421611&address=${ADDRESS}"],
-    "infoURL": "https://arbitrum.io",
-    "explorers": [
-      {
-        "name": "arbiscan-testnet",
-        "url": "https://testnet.arbiscan.io",
-        "standard": "EIP3091"
-      },
-      {
-        "name": "arbitrum-rinkeby",
-        "url": "https://rinkeby-explorer.arbitrum.io",
-        "standard": "EIP3091"
-      }
-    ],
-    "parent": {
-      "type": "L2",
-      "chain": "eip155-4",
-      "bridges": [{ "url": "https://bridge.arbitrum.io" }]
-    }
   },
   {
     "name": "Arbitrum Görli",

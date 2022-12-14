@@ -1,0 +1,72 @@
+version: "3.7"
+
+networks:
+  source-verify:
+
+x-project-base: &project-base
+  env_file:
+    - .env
+  restart: always
+  networks:
+    - source-verify
+
+services:
+  ui:
+    <<: *project-base
+    image: ethereum/source-verify:ui-${TAG}
+    build:
+      context: ../ui
+      dockerfile: Dockerfile
+      # Pass SERVER_URL and REPOSITORY_SERVER_URL to be injected build time.
+      # Will be set in .env (see scripts/build_and_publish_docker_images.sh)
+      args:
+        - SERVER_URL=$SERVER_URL
+        - REPOSITORY_SERVER_URL=$REPOSITORY_SERVER_URL
+        - IPNS=$IPNS
+        - TAG=$TAG
+    container_name: ui-${TAG}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+    ports:
+      - "${UI_EXTERNAL_PORT}:80"
+
+  repository:
+    <<: *project-base
+    image: ethereum/source-verify:repository-${TAG}
+    build:
+      context: ../h5ai-nginx
+      dockerfile: Dockerfile
+    container_name: repository-${TAG}
+    volumes:
+      - /data/data/repository:/data
+    ports:
+      - ${REPOSITORY_SERVER_EXTERNAL_PORT}:80
+
+  server:
+    <<: *project-base
+    image: ethereum/source-verify:server-${TAG}
+    build:
+      context: ../
+      dockerfile: src/Dockerfile.server
+    container_name: server-${TAG}
+    ports:
+      - "${SERVER_EXTERNAL_PORT}:${SERVER_PORT}"
+    volumes:
+      - /data/data/repository:/home/data/repository
+      - type: bind
+        source: $SOLC_REPO_HOST
+        target: $SOLC_REPO
+        read_only: true
+      - type: bind
+        source: $SOLJSON_REPO_HOST
+        target: $SOLJSON_REPO
+        read_only: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:${SERVER_PORT}/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+

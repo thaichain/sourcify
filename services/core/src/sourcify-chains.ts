@@ -138,6 +138,18 @@ export default {
     contractFetchAddress: "https://testnet.bscscan.com/" + ETHERSCAN_SUFFIX,
     txRegex: ETHERSCAN_REGEX,
   },
+  "35011": {
+    supported: true,
+    monitored: true,
+    contractFetchAddress: "https://exp.j2o.io/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
+  "703": {
+    supported: true,
+    monitored: true,
+    contractFetchAddress: "https://exp.tch.dev/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
   "100": {
     supported: true,
     monitored: true,
