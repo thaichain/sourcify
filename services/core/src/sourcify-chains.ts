@@ -96,6 +96,12 @@ export default {
     ],
     txRegex: ETHERSCAN_REGEX,
   },
+  "7": {
+    supported: true,
+    monitored: true,
+    contractFetchAddress: "https://exp.thaichain.org/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
   "11155111": {
     // Ethereum Sepolia Testnet
     supported: true,
@@ -137,6 +143,18 @@ export default {
     monitored: false,
     contractFetchAddress: "https://testnet.bscscan.com/" + ETHERSCAN_SUFFIX,
     txRegex: ETHERSCAN_REGEX,
+  },
+  "3501": {
+    supported: true,
+    monitored: true,
+    contractFetchAddress: "https://exp.jfinchain.com/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
+  "3502": {
+    supported: true,
+    monitored: true,
+    contractFetchAddress: "https://exp.testnet.jfinchain.com/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
   },
   "35011": {
     supported: true,
