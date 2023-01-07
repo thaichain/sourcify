@@ -13,7 +13,7 @@ x-project-base: &project-base
 services:
   ui:
     <<: *project-base
-    image: trustcontract/source-verify:ui-${TAG}
+    image: ethereum/source-verify:ui-${TAG}
     build:
       context: ../ui
       dockerfile: Dockerfile
@@ -35,7 +35,7 @@ services:
 
   repository:
     <<: *project-base
-    image: trustcontract/source-verify:repository-${TAG}
+    image: ethereum/source-verify:repository-${TAG}
     build:
       context: ../h5ai-nginx
       dockerfile: Dockerfile
@@ -47,7 +47,7 @@ services:
 
   server:
     <<: *project-base
-    image: trustcontract/source-verify:server-${TAG}
+    image: ethereum/source-verify:server-${TAG}
     build:
       context: ../
       dockerfile: src/Dockerfile.server
