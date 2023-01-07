@@ -102,6 +102,12 @@ export default {
     contractFetchAddress: "https://exp.thaichain.org/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex(),
   },
+  "8899": {
+    supported: true,
+    monitored: true,
+    contractFetchAddress: "https://exp-l1.jibchain.net/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
   "11155111": {
     // Ethereum Sepolia Testnet
     supported: true,
