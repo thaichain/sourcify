@@ -25,13 +25,60 @@
       }
     ]
   },
+
+  {
+    "name": "TBSI Mainnet",
+    "chain": "TBSI",
+    "rpc": ["https://rpc.blockchain.or.th/"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "JINDA",
+      "symbol": "jinda",
+      "decimals": 18
+    },
+    "infoURL": "https://blockchain.or.th/",
+    "shortName": "j2o",
+    "chainId": 1707,
+    "networkId": 1707,
+    "explorers": [
+      {
+        "name": "TBSI Mainnet Explorer",
+        "url": "https://exp.blockchain.or.th",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+
+  {
+    "name": "TBSI testnet",
+    "chain": "TBSI",
+    "rpc": ["https://rpc.testnet.blockchain.or.th/"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "JINDA",
+      "symbol": "jinda",
+      "decimals": 18
+    },
+    "infoURL": "https://blockchain.or.th/",
+    "shortName": "j2o",
+    "chainId": 1708,
+    "networkId": 1708,
+    "explorers": [
+      {
+        "name": "TBSI Testnet Explorer",
+        "url": "https://exp.testnet.blockchain.or.th",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+
   {
     "name": "JIB Chain L1",
     "chain": "JBC",
     "rpc": ["https://rpc-l1.jibchain.net"],
     "faucets": [],
     "nativeCurrency": {
-      "name": "TIB Coin",
+      "name": "JIB Coin",
       "symbol": "jbc",
       "decimals": 18
     },

@@ -102,6 +102,18 @@ export default {
     contractFetchAddress: "https://exp.thaichain.org/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex(),
   },
+  "1707": {
+    supported: true,
+    monitored: true,
+    contractFetchAddress: "https://exp.blockchain.or.th/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
+  "1708": {
+    supported: true,
+    monitored: true,
+    contractFetchAddress: "https://exp.blockchain.or.th/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
   "8899": {
     supported: true,
     monitored: true,
