@@ -72,6 +72,30 @@
     ]
   },
 
+
+  {
+    "name": "Raica",
+    "chain": "RAICA",
+    "rpc": ["https://rpc.raicablockchain.com/"],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "RAICA",
+      "symbol": "rai",
+      "decimals": 18
+    },
+    "infoURL": "https://exp.jfinchain.com/",
+    "shortName": "raica",
+    "chainId": 808,
+    "networkId": 808,
+    "explorers": [
+      {
+        "name": "Raica Blockchain",
+        "url": "https://exp.raicablockchain.com",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+
   {
     "name": "JIB Chain L1",
     "chain": "JBC",

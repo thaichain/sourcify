@@ -114,6 +114,12 @@ export default {
     contractFetchAddress: "https://exp.blockchain.or.th/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex(),
   },
+  "808": {
+    supported: true,
+    monitored: true,
+    contractFetchAddress: "https://exp.raicablockchain.com/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
   "8899": {
     supported: true,
     monitored: true,
